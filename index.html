@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Task Income</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 30px 15px;
+      background: #f2f4f7;
+    }
+
+    .box {
+      max-width: 400px;
+      margin: auto;
+      background: white;
+      padding: 25px;
+      border-radius: 18px;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    .balance {
+      font-size: 28px;
+      font-weight: bold;
+      margin: 20px 0;
+    }
+
+    button {
+      width: 100%;
+      padding: 15px;
+      margin-top: 12px;
+      border: 0;
+      border-radius: 12px;
+      font-size: 17px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="box">
+    <h1>💰 Daily Task Income</h1>
+
+    <div class="balance">
+      Balance: <span id="points">0</span> Points
+    </div>
+
+    <button onclick="watchAd()">📺 Watch Ad & Earn</button>
+
+    <button onclick="bonus()">🎁 Daily Bonus</button>
+  </div>
+
+  <script>
+    let points = 0;
+
+    function watchAd() {
+      alert("Ad system will be connected here.");
+    }
+
+    function bonus() {
+      points += 100;
+      document.getElementById("points").innerText = points;
+      alert("100 points added!");
+    }
+  </script>
+
+</body>
+</html>
