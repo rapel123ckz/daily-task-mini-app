@@ -59,8 +59,12 @@
     let points = 0;
 
     function watchAd() {
-      alert("Ad system will be connected here.");
-    }
+  show_11666956().then(() => {
+    points += 10;
+    document.getElementById("points").innerText = points;
+    alert("🎉 10 Points Added!");
+  });
+}
 
     function bonus() {
       points += 100;
